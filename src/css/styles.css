@@ -1,0 +1,81 @@
+/* XR — Extended Reality Freestyle */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #1a1a2e;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+/* 2D overlay UI */
+#ui-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  pointer-events: none;
+}
+
+#ui-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  background: rgba(26, 26, 46, 0.75);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(233, 69, 96, 0.3);
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #e94560;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.05em;
+}
+
+#ui-controls {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  pointer-events: all;
+}
+
+.ui-btn {
+  padding: 12px 28px;
+  background: #e94560;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.ui-btn:hover {
+  background: #c73652;
+  transform: translateY(-2px);
+}
+
+.ui-btn:active {
+  transform: translateY(0);
+}
+
+/* Loading screen override */
+.a-loader-title {
+  color: #e94560 !important;
+}
