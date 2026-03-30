@@ -1,0 +1,23 @@
+{
+  "name": "xr",
+  "version": "0.1.0",
+  "description": "An extended reality freestyle — WebVR/WebXR app built with A-Frame",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve . --listen 3000"
+  },
+  "keywords": [
+    "vr",
+    "xr",
+    "webvr",
+    "webxr",
+    "aframe",
+    "extended-reality"
+  ],
+  "author": "MattBannVan",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.3"
+  }
+}
